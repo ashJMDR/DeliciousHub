@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>DeliciousHub</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="imagenes/logoDeliciousHub.jpg" alt="logo">
+        <h1>DeliciousHub</h1>
+         <p class="pAdmin">
+            <img class="imgAdmin" src="imagenes/adminxd.jpg" alt="img admin">
+            <br>
+            Agus
+         </p>
+    </header>
+
+    <div class="nav">
+        <nav class="nav contenedor">
+            <a href="index.html">Salir</a>
+            <a href="perfil_admin.html">Inicio</a>
+            <a href="menuAd.html">Menú</a>
+            <a href="pedidosAd.html">Pedidos</a>
+        </nav>
+    </div>
+
+    <section class="banner">
+        <div class="contenido-banner">
+            <h2>El Paisa</h2>
+            <p>Pagina de administrador</p>
+        </div>
+    </section>
+
+    <section class="contenedor-tabla">
+
+        <h1 style="text-align: center;">Clientes</h1>
+
+        <div class="cont-botones">
+            <div>
+                <button class="boton-tabla" id="btn_enviar">Agregar Nuevo</button>
+                <input id="txt_nombre" class="inp" type="text" placeholder="Nombre del cliente" required>
+                <input id="txt_apellidos" class="inp" type="text" placeholder="Apellidos del cliente" required>
+                <input id="txt_correo" class="inp" type="email" placeholder="Correo del cliente" required>
+            </div>
+
+            <div style="display: block; align-items: center; margin: auto 1rem;">
+                <button class="boton-tabla" id="btn_actualizar">Actualizar</button>
+                <input class="inp" type="text" placeholder="ID del cliente a actualizar" id="txt_actualizar">
+                <button class="boton-tabla" id="btn_eliminar">Eliminar</button>
+                <input class="inp" type="text" placeholder="ID del cliente a eliminar" id="txt_eliminar">
+            </div>
+        </div>
+
+        <table id="tabla_clientes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre(s)</th>
+                    <th>Apellidos</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td>juanP@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>María</td>
+                    <td>Gómez</td>
+                    <td>mariaG@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <div class="footer">
+        <p> DeliciousHub <br> C. Mañanitas 273, Benito Juarez, 
+            Nezahualcoyotl, Edo. Mex. <br> Todos los derechos reservados.
+        </p>
+        <p>
+            MexiCode Solutions <br> 
+            <a href="#"> <img src="imagenes/iconos/icons8-facebook-nuevo-50.png" class="iconos"></a>
+            <a href="#"> <img src="imagenes/iconos/icons8-instagram-50.png" class="iconos"> </a>
+            <a href="#"> <img src="imagenes/iconos/icons8-whatsapp-50.png" class="iconos"></a>
+        </p>
+    </div>
+
+    <script src="scripts/clientesAd.js" ></script>
+
+</body>
+</html>
